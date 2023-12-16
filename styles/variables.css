@@ -4,13 +4,12 @@
 */
 
 :root {
-  --color-accent: #ff0070;
+  --title-decor: #ff0070;
   --font-weight-normal: 400;
   --font-weight-bold: 700;
   --text-color: #f1b2ce;
   --text-blocks-font-size: 18px;
-  --line-height-accent: 23.4px;
+  --line-height-text-blocks: 23.4px;
   --topic-color: #000028;
-  --h2-color: #ff0070;
-  --text-blocks-background-color: #ff0070;
+  --accent-color: #ff0070; /* переменная для тени заголовка в шапке и в подвале */
 }

@@ -25,6 +25,19 @@
   justify-content: center;
 }
 
+.title-header {
+  font-size: 157px;
+  font-weight: var(--font-weight-bold);
+  line-height: 130px;
+  letter-spacing: 0em;
+  text-align: left;
+  background: #db00ff;
+  text-transform: lowercase;
+  text-shadow: 4px 4px 0 var(--accent-color);
+  /* Для планшета и десктопа */
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+}
+
 .main {
   display: grid;
 }
@@ -32,7 +45,7 @@
 .text-blocks__general-rules {
   font-size: var(--text-blocks-font-size);
   font-weight: var(--font-weight-bold);
-  line-height: var(--line-height-accent);
+  line-height: var(--line-height-text-blocks);
 }
 
 /*----- SECTION-MAIN-1  -----*/
@@ -54,7 +67,7 @@
   display: grid;
   grid-row-start: 1;
   grid-row-end: 3;
-  color: var(--h2-color);
+  color: var(--title-decor);
   letter-spacing: 0em;
   text-align: left;
   background-color: rgba(255, 165, 0, 0.2);
@@ -78,7 +91,7 @@
   /* Заголовок h3 в текстовом блоке. Высота блока в макете 23px  */
   display: grid;
   color: var(--topic-color);
-  background-color: var(--text-blocks-background-color);
+  background-color: var(--title-decor);
   /* letter-spacing: 0em; */
   justify-items: start;
 }
@@ -97,10 +110,10 @@
   color: var(--text-color);
   font-size: var(--text-blocks-font-size);
   font-weight: var(--font-weight-normal);
-  line-height: var(--line-height-accent);
+  line-height: var(--line-height-text-blocks);
   letter-spacing: 0em;
   text-align: left;
-  background-color: rgba(255, 165, 0, 0.2);
+  /* background-color: rgba(255, 165, 0, 0.2); */
   justify-items: start;
   align-items: start;
 }
@@ -118,16 +131,16 @@
 
 /* Заголовок */
 .block_size_big {
-  background-color: rgba(255, 0, 0, 0.2);
+  /* background-color: rgba(255, 0, 0, 0.2); */
   grid-column-start: 1;
   grid-column-end: 4;
-  color: var(--h2-color);
+  color: var(--title-decor);
   grid-template-rows: auto;
 }
 
 .title-block_size_big {
   width: 315px;
-  background-color: rgba(255, 0, 0, 0.2);
+  /* background-color: rgba(255, 0, 0, 0.2); */
 }
 
 /*----- SECTION-MAIN-3 -----*/
