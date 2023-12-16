@@ -35,31 +35,8 @@
   line-height: var(--line-height-accent);
 }
 
-/* Стили: */
-.grid-test1 {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(236px, 315px));
-  grid-template-rows: auto;
-  column-gap: 20px;
-  row-gap: 20px;
-  padding: 0 0 0 20px;
-}
-
-/* Заголовок */
-.block_size_big {
-  background-color: rgba(255, 0, 0, 0.2);
-  grid-column-start: 1;
-  grid-column-end: 4;
-  color: var(--h2-color);
-  grid-template-rows: auto;
-}
-
-.title-block_size_big {
-  width: 315px;
-  background-color: rgba(255, 0, 0, 0.2);
-}
-
-/*----- Секция 1 -----*/
+/*----- SECTION-MAIN-1  -----*/
+/* (СЕТКА-1) */
 .grid__main-1 {
   display: grid;
   grid-template-columns: 315px minmax(315px, 650px);
@@ -83,6 +60,13 @@
   background-color: rgba(255, 165, 0, 0.2);
 }
 
+.h2__mod {
+  /* конфигурация для h2 третьей секции в MAIN */
+  display: grid;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+
 .main__section_text-block {
   /* Обертка для текстового блока */
   display: grid;
@@ -90,13 +74,21 @@
   row-gap: 10px;
 }
 
-.main__section_h3-title {
+.topic {
   /* Заголовок h3 в текстовом блоке. Высота блока в макете 23px  */
   display: grid;
-  color: var(--h3-color);
+  color: var(--topic-color);
   background-color: var(--text-blocks-background-color);
-  letter-spacing: 0em;
-  text-align: left;
+  /* letter-spacing: 0em; */
+  justify-items: start;
+}
+
+.topic_mod {
+  font-weight: var(--font-weight-normal);
+}
+
+.margin-block-end-10px {
+  margin-block-end: 10px;
 }
 
 .main__section-paragraph {
@@ -113,14 +105,43 @@
   align-items: start;
 }
 
-.main__section_subtitle {
-  /* подзаголовок в текстовом блоке. Высота блока в макете 23px */
-  color: #000028;
-  font-size: var(--text-blocks-font-size);
-  font-weight: var(--font-weight-normal);
-  line-height: var(--line-height-accent);
-  letter-spacing: 0em;
-  text-align: left;
+/*----- SECTION-MAIN-2 (СЕТКА 2) -----*/
+.grid_main-2 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(236px, 315px));
+  grid-template-rows: auto;
+  column-gap: 20px;
+  row-gap: 20px;
+  padding: 0 0 0 20px;
+  margin-block-end: 80px;
+}
+
+/* Заголовок */
+.block_size_big {
+  background-color: rgba(255, 0, 0, 0.2);
+  grid-column-start: 1;
+  grid-column-end: 4;
+  color: var(--h2-color);
+  grid-template-rows: auto;
+}
+
+.title-block_size_big {
+  width: 315px;
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+/*----- SECTION-MAIN-3 -----*/
+/* (СЕТКА-1) */
+.grid__main-3 {
+  display: grid;
+  grid-template-columns: 315px minmax(315px, 650px);
+  grid-template-rows: repeat(6, auto);
+  /* width: 1024px; */
+  /* height: 508px; */
+  padding: 0 0 0 20px;
+  column-gap: 20px;
+  row-gap: 20px;
+  margin-block-end: 80px;
 }
 
 /*----- Секция 2 -----*/
