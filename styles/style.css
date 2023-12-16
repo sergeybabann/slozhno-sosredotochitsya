@@ -26,7 +26,7 @@
 }
 
 .title-header {
-  font-size: 157px;
+  /* font-size: 157px; */
   font-weight: var(--font-weight-bold);
   line-height: 130px;
   letter-spacing: 0em;
